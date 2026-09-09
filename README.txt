@@ -1,8 +1,20 @@
-# Idly Katha — GitHub-ready website
+IDLY KATHA — REFERENCE STYLE VERSION
+====================================
 
-## IMPORTANT
-Keep this exact structure:
+This version deliberately follows the structure and feel of the supplied reference image:
+- Large visual hero with asymmetrical composition
+- Green botanical/village-inspired background
+- Large logo/emblem
+- Floating feature panel
+- Mixed-size story cards
+- Image-led gallery
+- Food menu cards
+- Warm cream / green / rust palette
+- Strong mobile layout
 
+All image references are local and use images/FILENAME.
+
+Upload to GitHub:
 index.html
 styles.css
 script.js
@@ -22,8 +34,3 @@ images/
   food-dosa.png
   food-vada.png
   food-poori.png
-  footer-village.png
-
-The HTML uses paths like `images/logo.png`, so the image files MUST be inside the `images` folder.
-
-The logo in this package is transparent, so it will not show the white box seen in the earlier preview.
