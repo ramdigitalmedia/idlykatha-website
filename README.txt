@@ -1,36 +1,21 @@
-IDLY KATHA — REFERENCE STYLE VERSION
-====================================
+IDLY KATHA — MENU VISUAL FIX
 
-This version deliberately follows the structure and feel of the supplied reference image:
-- Large visual hero with asymmetrical composition
-- Green botanical/village-inspired background
-- Large logo/emblem
-- Floating feature panel
-- Mixed-size story cards
-- Image-led gallery
-- Food menu cards
-- Warm cream / green / rust palette
-- Strong mobile layout
+The screenshot showed the food image covering the IDLY/DOSA/VADA/POORI title and prices.
+This version fixes that by separating the food photo and text areas.
 
-All image references are local and use images/FILENAME.
+Desktop:
+- 4 equal-width cards
+- fixed photo area
+- title/prices below the photo
+- no text overlap
 
-Upload to GitHub:
+Mobile:
+- one card per row
+- photo above title/list
+- easier reading and touch spacing
+
+Upload:
 index.html
 styles.css
 script.js
 images/
-  logo.png
-  hero.jpg
-  place-counter.jpg
-  place-decor.jpg
-  place-seating.jpg
-  place-entrance.jpg
-  gallery-entrance.jpg
-  gallery-counter.jpg
-  gallery-seating.jpg
-  gallery-village.jpg
-  gallery-decor.jpg
-  food-idly.png
-  food-dosa.png
-  food-vada.png
-  food-poori.png
