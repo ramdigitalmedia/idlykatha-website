@@ -46,10 +46,28 @@ h1,h2,h3{font-family:Eczar,serif;line-height:1.06;margin:0}
   radial-gradient(circle at 85% 75%,#0a2d2040,transparent 32%);
 }
 .paper-shape{position:absolute;right:-8%;top:-14%;width:58%;height:115%;background:var(--paper);transform:rotate(7deg);border-radius:48% 0 0 46%;box-shadow:-30px 0 70px #0b302322}
-.hero-copy{position:relative;z-index:2;max-width:650px;padding-left:4%;transform:translateY(-18px)}
+.hero-copy{position:relative;z-index:2;max-width:650px;padding-left:4%;transform:translateY(-20px)}
 .badge{display:inline-block;color:#f7d385;letter-spacing:.18em;font-size:.72rem;font-weight:800;margin-bottom:10px}
-.logo-wrap{width:200px;height:200px;display:grid;place-items:center;margin:-22px 0 12px;background:#ffffff;border:5px solid #edc878;border-radius:50%;box-shadow:0 15px 35px #082c2050}
-.logo{width:100%;height:100%;object-fit:contain;padding:6px;background:#ffffff;border-radius:50%}
+.logo-wrap{
+  width:246px;
+  height:246px;
+  display:grid;
+  place-items:center;
+  margin:-38px 0 22px;
+  background:#ffffff;
+  border:4px solid #edc878;
+  border-radius:22px;
+  box-shadow:0 18px 38px #082c2050;
+  overflow:hidden;
+}
+.logo{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:0;
+  background:#ffffff;
+  border-radius:0;
+}
 .hero h1{font-size:clamp(2.2rem,5.4vw,4.8rem);text-shadow:0 5px 14px #092d2244}
 .hero .script{font-size:1.5rem;color:#f4d489;margin-top:7px}
 .hero-text{font-size:1rem;max-width:560px;margin:13px 0 22px;color:#f8efdc}
@@ -161,7 +179,7 @@ h1,h2,h3{font-family:Eczar,serif;line-height:1.06;margin:0}
   .nav-cta{text-align:center}
   .hero{padding:42px 6% 100px}
   .hero-copy{transform:translateY(-10px)}
-  .logo-wrap{width:165px;height:165px;margin:-16px 0 12px}
+  .logo-wrap{width:190px;height:190px;margin:-18px 0 18px;border-radius:18px}
   .hero h1{font-size:2.3rem}
   .hero .script{font-size:1.25rem}
   .hero-photo-card img{height:350px}
