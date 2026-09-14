@@ -1,280 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Idly Katha — Village Style South Indian Tiffin</title>
-<meta name="description" content="Idly Katha — village-style South Indian breakfast in Kukatpally, Hyderabad.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700;800&family=Kalam:wght@400;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Telugu:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ఇడ్లీ కథ — Idly Katha</title>
+<meta name="description" content="Idly Katha — a heritage South Indian tiffin experience in Sai Baba Nagar Colony, Kukatpally, Hyderabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600;700;800&family=Noto+Sans+Telugu:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff8f2;--paper:#f7eedb;--soft:#fff1ea;--red:#7d270f;--red2:#9d3d23;--green:#224e1d;--green2:#396732;--brown:#5a3d2f;--gold:#c18d42;--line:#dbc5b8;--ink:#2e211c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream)}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}h1,h2,h3{font-family:'Noto Serif',serif;margin:0;line-height:1.08}.wrap{width:min(1180px,92%);margin:auto}.muted{color:#69544d}.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.08em}.red{background:#ffe0d7;color:var(--red)}.green{background:#e0efd9;color:var(--green)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:800;font-size:13px;border:1px solid transparent}.btn.red{background:var(--red);color:#fff4ef}.btn.greenbtn{background:var(--green);color:#fff}.btn.light{background:#fff;border-color:#e1cfc6;color:var(--red)}.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px #4d2c2014}
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,248,245,.95);backdrop-filter:blur(12px);border-bottom:1px solid #decac2}.navinner{height:74px;width:min(1250px,94%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:10px}.brand img{width:52px;height:52px;object-fit:contain;background:#fff}.brand strong{font-family:'Noto Sans Telugu',sans-serif;font-size:19px;color:var(--red);display:block}.brand small{font-size:10px;color:#8f4e00;letter-spacing:.08em}.nav{display:flex;gap:20px;align-items:center;font-size:12px;font-weight:700}.nav a:hover{color:var(--red)}.navcta{background:var(--green);color:#fff;padding:9px 13px;border-radius:9px}.toggle{display:none;border:0;background:transparent;font-size:24px}
+.quick{margin-top:74px;background:#f9e6de;border-bottom:1px solid #e4cfc9}.quickin{width:min(1250px,94%);margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;flex-wrap:wrap;font-size:11px}.quicklinks{display:flex;gap:7px;flex-wrap:wrap}.quicklinks a{padding:7px 9px;border:1px solid #e4cfc9;border-radius:8px;background:#fff;font-weight:700}
+.hero{background:#fff7f4;padding:56px 0 30px}.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:44px;align-items:center}.hero h1{font-size:clamp(38px,5vw,59px);color:var(--red);margin:13px 0}.hero h1 span{color:#a14a22}.hero p{font-size:16px;line-height:1.7}.hero-pills{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.hero-pill{background:#fff;border:1px solid #ead8cf;border-radius:12px;padding:10px;font-size:10px}.hero-pill strong{display:block;font-size:10px;color:var(--green);margin-bottom:3px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.hero-photo{background:#fff;padding:7px;border-radius:12px;box-shadow:0 18px 45px #542e241c;border:1px solid #dcc9bf;position:relative}.hero-photo img{width:100%;height:470px;object-fit:cover;border-radius:8px}.hero-photo .tag{position:absolute;bottom:14px;left:14px;right:14px;background:#fffdf9e8;border-radius:9px;padding:10px;font-size:11px}.featurebar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:28px}.featurebar span{font-size:10px;font-weight:800;color:#6c4a40;background:#fff;border:1px solid #dfcdc5;border-radius:999px;padding:7px 10px}
+.section{padding:70px 0}.section.soft{background:#fff1eb}.section.paper{background:var(--paper)}.section h2{text-align:center;color:var(--red);font-size:clamp(28px,4vw,40px)}.section .lead{text-align:center;max-width:700px;margin:9px auto 26px;color:#6a564e;font-size:13px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.story-logo{width:200px;height:200px;object-fit:contain;background:#fff;border:1px solid #e6d2c9;border-radius:16px;margin:auto;box-shadow:0 15px 35px #5b37281a}.story h3{font-size:28px;color:var(--red);margin-bottom:8px}.story p{font-size:13px;line-height:1.7}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.feature-box{background:#fff;border:1px solid #e4d4cd;border-radius:10px;padding:12px}.feature-box strong{display:block;font-size:11px}.feature-box span{font-size:10px;color:#735f57}
+.menu-wrap{display:grid;grid-template-columns:1.1fr .75fr;gap:20px;align-items:start}.menu-board{background:#fffaf1;border:1px solid #d8c09b;border-radius:14px;box-shadow:0 20px 45px #4a2b1a1c;padding:18px;position:relative}.menu-board:before{content:'OUR HERITAGE FOOD MENU';display:block;text-align:center;font-family:'Noto Serif',serif;font-size:24px;color:var(--red);margin-bottom:14px}.menu-columns{display:grid;grid-template-columns:1fr 1fr;gap:17px}.menu-cat{background:#fff;border:1px solid #e4d7c4;border-radius:9px;padding:12px}.menu-cat h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;background:var(--green);color:#fff;padding:7px 10px;border-radius:8px;display:inline-block;margin-bottom:8px}.menu-cat ul{margin:0;padding:0;list-style:none}.menu-cat li{display:flex;justify-content:space-between;gap:8px;font-size:10px;padding:5px 0;border-bottom:1px dotted #c9b8ac}.menu-cat li:last-child{border-bottom:0}.price{color:var(--red);font-weight:800}.menu-image-card{background:#fff;border:1px solid #e2cfc6;border-radius:14px;padding:12px}.menu-image-card img{width:100%;height:520px;object-fit:contain;border-radius:8px}.food-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:15px}.food-mini{background:#fff;border:1px solid #e2d5ca;border-radius:12px;overflow:hidden}.food-mini img{width:100%;height:150px;object-fit:cover}.food-mini .cap{padding:9px;font-weight:800;font-size:11px;color:var(--green);display:flex;justify-content:space-between}
+.gallerygrid{display:grid;grid-template-columns:1.3fr .9fr .9fr;grid-template-rows:220px 220px 220px;gap:10px}.gallerygrid figure{margin:0;position:relative;overflow:hidden;border-radius:11px;border:2px solid #fff;box-shadow:0 8px 20px #4a2b1a13}.gallerygrid img{width:100%;height:100%;object-fit:cover}.gallerygrid figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:#132a20d9;color:#fff;padding:8px;border-radius:7px;font-size:10px;font-weight:800}.g1{grid-row:span 2}.g4{grid-column:span 2}.g5{grid-column:span 2}
+.reviews{background:#fff}.reviewgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:13px}.review{background:#fff;border:1px solid #e6d8d1;border-radius:10px;padding:16px}.stars{color:#bd7c16;font-size:14px}.review p{font-size:11px;line-height:1.65;color:#655149}.review b{font-size:10px;color:var(--green)}.rating{display:flex;justify-content:space-between;align-items:center;background:#fff3ef;border:1px solid #ead5cc;border-radius:12px;padding:13px;margin-bottom:14px}.rating strong{font-size:26px;color:var(--red)}
+.visit{background:#fff1eb}.visitgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.visitcard{background:#fff;border:1px solid #e6d4cd;border-radius:12px;padding:17px}.visitcard h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;color:var(--green)}.visitrow{display:grid;grid-template-columns:100px 1fr;gap:10px;padding:10px 0;border-bottom:1px dotted #cab6ad;font-size:10px}.visitrow:last-child{border-bottom:0}.map{background:#f7e1d7;border-radius:12px;min-height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #dfc3b8}.map img{width:100%;height:100%;object-fit:cover;opacity:.92}.footer{background:#7b260e;color:#fff5ed;padding:35px 0 15px}.footergrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:25px}.footer h3{font-size:17px;color:#ffd7a8}.footer p,.footer li,.footer small{font-size:10px;line-height:1.7;color:#f2d7cb}.footer ul{list-style:none;margin:8px 0 0;padding:0}.footbottom{border-top:1px solid #f3c7b455;margin-top:25px;padding-top:10px;font-size:9px;display:flex;justify-content:space-between}
+@media(max-width:1050px){.nav{display:none}.toggle{display:block}.hero-grid,.story,.menu-wrap,.visitgrid{grid-template-columns:1fr}.hero-photo{max-width:700px;margin:auto}.feature-grid{grid-template-columns:1fr 1fr}.gallerygrid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px 220px}.g1{grid-row:span 2}.g4,.g5{grid-column:span 2}.reviewgrid{grid-template-columns:1fr 1fr}.footergrid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.navinner{height:66px}.quick{margin-top:66px}.quickin{justify-content:center}.hero{padding-top:30px}.hero h1{font-size:38px}.hero-pills{grid-template-columns:1fr}.hero-photo img{height:340px}.food-strip{grid-template-columns:1fr 1fr}.menu-columns{grid-template-columns:1fr}.gallerygrid{grid-template-columns:1fr;grid-template-rows:repeat(5,220px)}.g1,.g4,.g5{grid-column:auto;grid-row:auto}.reviewgrid{grid-template-columns:1fr}.footergrid{grid-template-columns:1fr}.footbottom{flex-direction:column;gap:5px}.story-logo{width:170px;height:170px}}
+</style></head>
 <body>
-
-<header class="header">
-  <a class="brand" href="#home">
-    <img src="images/logo.png" alt="Idly Katha logo">
-    <span>
-      <strong>IDLY KATHA</strong>
-      <small>TRADITIONAL SOUTH INDIAN TIFFIN</small>
-    </span>
-  </a>
-
-  <button class="menu-toggle" aria-label="Open menu">☰</button>
-
-  <nav class="nav">
-    <a href="#home">Home</a>
-    <a href="#place">Our Place</a>
-    <a href="#menu">Menu</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#visit">Visit Us</a>
-    <a href="https://www.instagram.com/idly_katha/" target="_blank" rel="noopener">@idly_katha</a>
-    <a class="nav-cta" href="tel:+919502275559">☎ Call Now</a>
-  </nav>
-</header>
-
-<main>
-
-<section id="home" class="hero">
-  <div class="paper-shape"></div>
-  <div class="hero-copy">
-    <div class="badge">A LITTLE TASTE OF HOME</div>
-
-    <div class="logo-wrap">
-      <img src="images/logo.png" class="logo" alt="Idly Katha">
-    </div>
-
-    <h1 class="telugu">ఇడ్లీతో మొదలయ్యే<br>రుచుల కథ</h1>
-    <p class="script">the flavour story that begins with idly</p>
-
-    <p class="hero-text">
-      Village-style breakfast, made fresh every morning with warmth,
-      tradition and the taste of home.
-    </p>
-
-    <div class="hero-actions">
-      <a class="btn dark" href="#menu">🍴 View Menu</a>
-      <a class="btn rust" href="https://wa.me/919502275559" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="hero-photo-card">
-    <img src="images/hero.jpg" alt="Idly Katha restaurant">
-    <div class="photo-label">Our Village Kitchen</div>
-  </div>
-
-  <div class="leaf-line" aria-hidden="true"></div>
-
-  <div class="hero-bottom">
-    <span>🌿 Home-style tiffin</span>
-    <span>🌿 Fresh every morning</span>
-    <span>🌿 Made with ghee</span>
-    <span>🌿 Village taste</span>
-  </div>
-</section>
-
-<section class="features section">
-  <div class="feature-panel">
-    <div class="feature">
-      <div class="icon">☀</div>
-      <h3>Fresh Morning</h3>
-      <p>Breakfast prepared fresh for the morning rush and slow family mornings.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🥣</div>
-      <h3>Traditional Taste</h3>
-      <p>Familiar South Indian flavours with the comfort of a home kitchen.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🌿</div>
-      <h3>Village Vibes</h3>
-      <p>Bamboo, marigolds, warm lights and a little piece of the village.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">♡</div>
-      <h3>Made With Love</h3>
-      <p>Simple food, generous warmth and a place you will remember.</p>
-    </div>
-  </div>
-</section>
-
-<section id="place" class="cards section">
-  <div class="section-title">
-    <span>EXPLORE IDLY KATHA</span>
-    <h2>Our Place, Our Story</h2>
-    <p>Like the reference design, each story is presented as a visual card — but everything is built around your restaurant.</p>
-  </div>
-
-  <div class="story-grid">
-    <article class="story-card big-card">
-      <img src="images/place-counter.jpg" alt="Idly Katha counter">
-      <div class="story-overlay">
-        <span>01 · THE HEART OF IDLY KATHA</span>
-        <h3>The Tiffin Counter</h3>
-        <p>Where the morning story starts.</p>
-      </div>
-    </article>
-
-    <article class="story-card green-card">
-      <div class="mini-icon">✿</div>
-      <h3>The Village Feel</h3>
-      <p>Earthy greens, bamboo textures, rangoli and warm lamps bring the village into the city.</p>
-      <a href="#gallery">See the space →</a>
-    </article>
-
-    <article class="story-card rust-card">
-      <div class="mini-icon">◌</div>
-      <h3>Traditional Flavours</h3>
-      <p>Idly, dosa, vada and poori — simple favourites made for a satisfying morning.</p>
-      <a href="#menu">See the menu →</a>
-    </article>
-
-    <article class="story-card light-card">
-      <div class="mini-icon">🏡</div>
-      <h3>A Place To Slow Down</h3>
-      <p>Come hungry. Leave happy. Stay for the atmosphere.</p>
-      <a href="#visit">Plan your visit →</a>
-    </article>
-
-    <article class="story-card image-card">
-      <img src="images/gallery-village.jpg" alt="Village mural at Idly Katha">
-    </article>
-
-    <article class="story-card image-card">
-      <img src="images/place-decor.jpg" alt="Traditional Idly Katha decor">
-    </article>
-  </div>
-</section>
-
-<section id="gallery" class="gallery section">
-  <div class="section-title">
-    <span>GALLERY</span>
-    <h2>See The Story</h2>
-    <p>Your real restaurant photographs become the visual background, just like the reference's image-led design.</p>
-  </div>
-
-  <div class="gallery-layout">
-    <img src="images/gallery-entrance.jpg" class="g1" alt="Restaurant entrance">
-    <img src="images/gallery-seating.jpg" class="g2" alt="Restaurant seating">
-    <img src="images/gallery-counter.jpg" class="g3" alt="Tiffin counter">
-    <img src="images/gallery-decor.jpg" class="g4" alt="Restaurant decor">
-    <img src="images/place-seating.jpg" class="g5" alt="Dining area">
-  </div>
-</section>
-
-<section id="menu" class="menu section">
-  <div class="section-title light">
-    <span>FOOD MENU</span>
-    <h2>What's Cooking?</h2>
-    <p>Large food photos, simple cards and easy-to-read prices.</p>
-  </div>
-
-  <div class="menu-grid">
-    <article class="food-card">
-      <div class="food-photo"><img src="images/food-idly.png" alt="Idly"></div>
-      <div class="food-body">
-        <div class="food-head"><h3>IDLY</h3><span>₹50</span></div>
-        <ul>
-          <li>Idly <b>₹50</b></li>
-          <li>Ghee Karam Idly <b>₹50</b></li>
-          <li>Chitti Idly Sambar Bowl <b>₹50</b></li>
-          <li>Thatti Idly <b>₹50</b></li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="food-card">
-      <div class="food-photo"><img src="images/food-dosa.png" alt="Dosa"></div>
-      <div class="food-body">
-        <div class="food-head"><h3>DOSA</h3><span>₹50+</span></div>
-        <ul>
-          <li>Plain Dosa <b>₹50</b></li>
-          <li>Ghee Karam Dosa <b>₹50</b></li>
-          <li>Masala Dosa <b>₹50</b></li>
-          <li>Onion Dosa <b>₹50</b></li>
-          <li>Onion Pesarattu <b>₹60</b></li>
-          <li>Pesarattu Upma <b>₹70</b></li>
-          <li>Set Dosa <b>₹50</b></li>
-          <li>Rava Dosa <b>₹70</b></li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="food-card">
-      <div class="food-photo"><img src="images/food-vada.png" alt="Vada"></div>
-      <div class="food-body">
-        <div class="food-head"><h3>VADA</h3><span>₹50</span></div>
-        <ul>
-          <li>Vada <b>₹50</b></li>
-          <li>Sambar Vada <b>₹50</b></li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="food-card">
-      <div class="food-photo"><img src="images/food-poori.png" alt="Poori"></div>
-      <div class="food-body">
-        <div class="food-head"><h3>POORI</h3><span>₹50</span></div>
-        <ul>
-          <li>Poori <b>₹50</b></li>
-        </ul>
-        <div class="served">Served with Fresh Coconut Chutney · Peanut Chutney · Sambar</div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="quote section">
-  <div class="quote-inner">
-    <div>
-      <span>THE IDLY KATHA FEEL</span>
-      <h2 class="telugu">ఊరి రుచి… ఇంటి జ్ఞాపకం…</h2>
-      <p>“A little piece of the village, right here in Kukatpally.”</p>
-    </div>
-    <img src="images/gallery-entrance.jpg" alt="Warmly lit Idly Katha entrance">
-  </div>
-</section>
-
-<section id="visit" class="visit section">
-  <div class="visit-grid">
-    <div>
-      <div class="section-title">
-        <span>COME VISIT US</span>
-        <h2>Start Your Morning Here</h2>
-      </div>
-      <div class="visit-info">
-        <div><strong>📍 Address</strong><span>Sai Baba Nagar Colony, Kukatpally, Hyderabad</span></div>
-        <div><strong>☎ Phone</strong><a href="tel:+919502275559">+91 95022 75559</a></div>
-        <div><strong>◷ Open Daily</strong><span>7:00 AM – 11:00 AM</span></div>
-        <div><strong>◎ Instagram</strong><a href="https://www.instagram.com/idly_katha/" target="_blank" rel="noopener">@idly_katha</a></div>
-      </div>
-      <div class="visit-actions">
-        <a class="btn rust" href="tel:+919502275559">☎ Call Now</a>
-        <a class="btn dark" href="https://maps.google.com/?q=Sai+Baba+Nagar+Colony+Kukatpally+Hyderabad" target="_blank" rel="noopener">📍 Get Directions</a>
-      </div>
-    </div>
-    <div class="visit-art">
-      <div class="circle">🏮</div>
-      <h3>7 AM → 11 AM</h3>
-      <p>Fresh tiffin · warm coffee · village vibes</p>
-    </div>
-  </div>
-</section>
-
+<header class="header"><div class="navinner"><a class="brand" href="#home"><img src="images/logo.png" alt="Idly Katha logo"><span><strong>ఇడ్లీ కథ</strong><small>IDLY KATHA</small></span></a><button class="toggle" aria-label="Menu">☰</button><nav class="nav"><a href="#home">Home</a><a href="#our-story">Our Story</a><a href="#signature-menu">Official Food Menu</a><a href="#gallery">Gallery & Ambience</a><a href="#visit-us">Visit Us</a><a href="https://www.instagram.com/idly_katha/" target="_blank">@idly_katha</a><a class="navcta" href="tel:+919502275559">☎ Call Now</a></nav></div></header>
+<div class="quick"><div class="quickin"><strong>● Fresh batters steaming every morning • Open 7:00 AM – 11:00 AM</strong><div class="quicklinks"><a href="tel:+919502275559">+91 95022 75559</a><a href="https://wa.me/919502275559" target="_blank">Order on WhatsApp</a><a href="https://www.instagram.com/idly_katha/" target="_blank">@idly_katha</a><a href="https://maps.google.com/?q=Sai+Baba+Nagar+Colony+Kukatpally+Hyderabad" target="_blank">Kukatpally Directions</a></div></div></div>
+<main id="home">
+<section class="hero"><div class="wrap hero-grid"><div><span class="pill red">🔥 ANCESTRAL HEARTH TRADITION • పాతకాలపు పద్ధతి</span><h1 class="telugu">అమ్మ చేతి రుచి...<br><span>మన ఊరి ముచ్చట్లు...</span></h1><p>Authentic home-style heritage tiffins, steamed fresh every morning with pure ghee, traditional chutneys and the feeling of an Andhra village kitchen.</p><div class="hero-pills"><div class="hero-pill"><strong>100% PURE VEG</strong>శుద్ధ శాకాహారం</div><div class="hero-pill"><strong>TRADITIONAL TIFFIN</strong>సంప్రదాయ వంట</div><div class="hero-pill"><strong>FRESH MORNING</strong>ప్రతి ఉదయం తాజా</div></div><div class="hero-actions"><a class="btn red" href="#signature-menu">🍴 View Official Food Menu</a><a class="btn greenbtn" href="https://wa.me/919502275559" target="_blank">💬 WhatsApp Order</a><a class="btn light" href="https://maps.google.com/?q=Sai+Baba+Nagar+Colony+Kukatpally+Hyderabad" target="_blank">📍 Kukatpally Directions</a></div></div><div class="hero-photo"><img src="images/counter.jpg" alt="Idly Katha thatched counter"><div class="tag"><strong>🏡 The heart of Idly Katha</strong><br><span class="muted">Thatched hut counter · warm lamps · village-inspired courtyard</span></div></div></div><div class="wrap featurebar"><span>🌿 HOME-STYLE TIFFIN</span><span>🌿 FRESH EVERY MORNING</span><span>🌿 MADE WITH GHEE</span><span>🌿 VILLAGE TASTE</span></div></section>
+<section id="our-story" class="section soft"><div class="wrap story"><div><img class="story-logo" src="images/logo.png" alt="Idly Katha logo"><p style="text-align:center;margin:12px 0 0;color:#7a5a4e;font-size:11px;letter-spacing:.08em">ఇడ్లీ కథ · TRADITIONAL SOUTH INDIAN TIFFIN</p></div><div><h3>Where Village Nostalgia Meets<br>Uncompromised Quality</h3><p>Idly Katha brings the warmth of a village morning to Kukatpally — earthy interiors, marigold garlands, brass details, warm lights and the familiar comfort of breakfast made with care.</p><div class="feature-grid"><div class="feature-box"><strong>🍃 Banana Leaf Steaming</strong><span>Soft, fresh tiffin prepared for the morning.</span></div><div class="feature-box"><strong>🥣 Traditional Chutneys</strong><span>Fresh coconut, peanut chutney and sambar.</span></div><div class="feature-box"><strong>🔥 Warm Village Kitchen</strong><span>Thatched hut counter and courtyard ambience.</span></div><div class="feature-box"><strong>☕ South Indian Coffee</strong><span>A warm finish to your breakfast.</span></div></div></div></div></section>
+<section id="signature-menu" class="section paper"><div class="wrap"><h2>Our Heritage Food Menu</h2><p class="lead">Simple South Indian favourites with clear prices and generous portions.</p><div class="menu-wrap"><div class="menu-board"><div class="menu-columns"><div class="menu-cat"><h3>IDLY</h3><ul><li>Idly <span class="price">₹50</span></li><li>Ghee Karam Idly <span class="price">₹50</span></li><li>Chitti Idly Sambar Bowl <span class="price">₹50</span></li><li>Thatti Idly <span class="price">₹50</span></li></ul></div><div class="menu-cat"><h3>DOSA</h3><ul><li>Plain Dosa <span class="price">₹50</span></li><li>Ghee Karam Dosa <span class="price">₹50</span></li><li>Masala Dosa <span class="price">₹50</span></li><li>Onion Dosa <span class="price">₹50</span></li><li>Onion Pesarattu <span class="price">₹60</span></li><li>Pesarattu Upma <span class="price">₹70</span></li><li>Set Dosa <span class="price">₹50</span></li><li>Rava Dosa <span class="price">₹70</span></li></ul></div><div class="menu-cat"><h3>VADA</h3><ul><li>Vada <span class="price">₹50</span></li><li>Sambar Vada <span class="price">₹50</span></li></ul></div><div class="menu-cat"><h3>POORI</h3><ul><li>Poori <span class="price">₹50</span></li></ul></div></div><div class="food-strip"><div class="food-mini"><img src="images/idly.png"><div class="cap"><span>Idly</span><span>₹50</span></div></div><div class="food-mini"><img src="images/dosa.png"><div class="cap"><span>Dosa</span><span>₹50+</span></div></div><div class="food-mini"><img src="images/vada.png"><div class="cap"><span>Vada</span><span>₹50</span></div></div><div class="food-mini"><img src="images/poori.png"><div class="cap"><span>Poori</span><span>₹50</span></div></div></div></div><div class="menu-image-card"><img src="images/menu-card.png" alt="Idly Katha official menu card"></div></div></div></section>
+<section id="gallery" class="section soft"><div class="wrap"><h2>Village Courtyard Dining Ambience</h2><p class="lead">Real photographs from Idly Katha — your actual space, shown as the visual story of the site.</p><div class="gallerygrid"><figure class="g1"><img src="images/counter.jpg"><figcaption>The Sacred Hut Counter & Warm Courtyard</figcaption></figure><figure><img src="images/village.jpg"><figcaption>The Harvest Heartland Mural</figcaption></figure><figure><img src="images/wall.jpg"><figcaption>Traditional Story Wall</figcaption></figure><figure><img src="images/dining.jpg"><figcaption>Morning Dining Ambience</figcaption></figure><figure class="g4"><img src="images/seating.jpg"><figcaption>Lantern-lit Courtyard Seating</figcaption></figure><figure class="g5"><img src="images/decor.jpg"><figcaption>Traditional Decoration & Prayer Corner</figcaption></figure><figure><img src="images/people.jpg"><figcaption>Happy Family Moments</figcaption></figure><figure><img src="images/entrance.jpg"><figcaption>Welcome to Idly Katha</figcaption></figure></div></div></section>
+<section class="section reviews"><div class="wrap"><h2>Loved by Breakfast Aficionados</h2><p class="lead">Warm words, village vibes and the joy of a satisfying South Indian breakfast.</p><div class="rating"><div><strong>4.9</strong> / 5<br><span class="stars">★★★★★</span></div><div style="font-size:10px;color:#6b554d">Based on local breakfast experience</div></div><div class="reviewgrid"><div class="review"><div class="stars">★★★★★</div><p>“Beautiful ambience and the food feels homemade. The village theme is really special.”</p><b>Breakfast guest</b></div><div class="review"><div class="stars">★★★★★</div><p>“The hut counter, lamps and traditional details make the place memorable. Good morning stop.”</p><b>Local guest</b></div><div class="review"><div class="stars">★★★★★</div><p>“Loved the idly and dosa. Simple menu, clean presentation and a warm family feel.”</p><b>Family guest</b></div></div></div></section>
+<section id="visit-us" class="section visit"><div class="wrap"><h2>Visit Us at Kukatpally</h2><p class="lead">Come hungry, leave happy. Your village-style breakfast morning starts here.</p><div class="visitgrid"><div class="visitcard"><h3>Service Timings · సమయాలు</h3><div class="visitrow"><strong>Opening</strong><span>Daily · 7:00 AM – 11:00 AM</span></div><div class="visitrow"><strong>Phone</strong><a href="tel:+919502275559">+91 95022 75559</a></div><div class="visitrow"><strong>Address</strong><span>Sai Baba Nagar Colony, Kukatpally, Hyderabad</span></div><div class="visitrow"><strong>Instagram</strong><a href="https://www.instagram.com/idly_katha/" target="_blank">@idly_katha</a></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><a class="btn red" href="tel:+919502275559">☎ Call Now</a><a class="btn greenbtn" href="https://wa.me/919502275559" target="_blank">💬 WhatsApp</a></div></div><div class="map"><img src="images/village.jpg" alt="Kukatpally village-inspired image"><div style="position:absolute;background:#ffffffdf;padding:10px;border-radius:9px;font-size:11px;font-weight:800;color:var(--red)">📍 Sai Baba Nagar Colony · Kukatpally</div></div></div></div></section>
 </main>
-
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="Idly Katha">
-      <div><strong>ఇడ్లీ కథ</strong><small>Traditional South Indian Tiffin</small></div>
-    </div>
-    <p class="script">Good Food Brings Good People Together ♡</p>
-    <div class="footer-bottom"><span>© 2026 Idly Katha</span><span>Sai Baba Nagar Colony · Kukatpally · Hyderabad</span></div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<footer class="footer"><div class="wrap footergrid"><div><img src="images/logo.png" alt="Idly Katha" style="width:75px;height:75px;object-fit:contain;background:#fff;border-radius:8px"><h3>ఇడ్లీ కథ</h3><p>Traditional South Indian Tiffin with a village-inspired dining experience in Kukatpally.</p></div><div><h3>Opening Hours</h3><ul><li>Daily</li><li>7:00 AM – 11:00 AM</li></ul></div><div><h3>Our Reach & Contact</h3><ul><li>Sai Baba Nagar Colony</li><li>Kukatpally, Hyderabad</li><li>+91 95022 75559</li><li>@idly_katha</li></ul></div><div><h3>Tradition</h3><p>Fresh tiffin, warm hospitality and the flavour of home.</p></div></div><div class="wrap footbottom"><span>© 2026 Idly Katha</span><span>Privacy Policy · Terms</span></div></footer>
+<script>const t=document.querySelector('.toggle'),n=document.querySelector('.nav');t.addEventListener('click',()=>n.classList.toggle('open'));document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')))</script>
+</body></html>
